@@ -1,4 +1,5 @@
 <script setup lang="ts">
+document.title = 'Baseball Skill Calculator'
 import SkillCalculator from './components/SkillCalculator.vue'
 </script>
 
