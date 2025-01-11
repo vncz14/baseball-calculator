@@ -22,7 +22,6 @@
 </template>
 
 <script setup lang="ts">
-import { parse } from 'path'
 import { ref, watch } from 'vue'
 
 const baseDifferential = ref(0)
