@@ -41,8 +41,10 @@ function setBounds(skillLevel: number, baseDifferential: number) {
 
   let lowCpuBonus = (skillLevel - 50) / 8
   lowCpuBonus = lowCpuBonus < 0 ? 0 : lowCpuBonus
+  lowCpuBonus = lowCpuBonus > 150 ? 150 : lowCpuBonus
 
   let highCpuBonus = (skillLevel + 50) / 8
+  lowCpuBonus = highCpuBonus < 0 ? 0 : highCpuBonus
   highCpuBonus = highCpuBonus > 150 ? 150 : highCpuBonus
 
   let skillWithLowCpuBonus = skillWithoutCpuBonus + lowCpuBonus
