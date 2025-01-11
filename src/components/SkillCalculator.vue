@@ -57,6 +57,9 @@ function setBounds(skillLevel: number, baseDifferential: number) {
 
   lowerBound.value = skillWithLowCpuBonus
   upperBound.value = skillWithHighCpuBonus
+
+  // 0 skill = no randomness to the cpu bonus
+  if (skillLevel === 0) upperBound.value = lowerBound.value
 }
 
 watch(skillLevel, () => {
