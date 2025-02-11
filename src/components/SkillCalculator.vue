@@ -37,9 +37,9 @@
         <hr>
         <div class="explanation-item" id="skill-without-cpu-bonus">
             <h5></h5>
-            <h2>{{ truncate(1.035 * skillLevel + 97.5 * Math.atan(baseDifferential / 10), 1) }}</h2>
+            <h2>{{ truncate(1.035 * parseInt(skillLevel) + 97.5 * Math.atan(baseDifferential / 10), 1) }}</h2>
         </div>
-        <div v-if="skillLevel != 0" class="explanation-item" id="skill-without-cpu-bonus">
+        <div v-if="parseInt(skillLevel) != 0" class="explanation-item" id="skill-without-cpu-bonus">
             <h5>Random number</h5>
             <h5>±6.25</h5>
         </div>
